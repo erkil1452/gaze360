@@ -4,7 +4,7 @@
 
 This is a dataset of 197588 frames from 238 subjects with 3D gaze annotations as captured in our Opengaze dataset. The dataset is for non-commercial research use only. By using this dataset you agree to terms of the [LICENSE](https://github.com/Erkil1452/opengaze/blob/master/LICENSE.md). If you use our dataset or code cite our [paper](x) as:
 
- > Petr Kellnhofer, Adrià Recasens, Simon Stent, Wojciech Matusik, and Antonio Torralba. “OpenGaze: Physically Unconstrained Gaze Estimation in the Wild”. IEEE International Conference on Computer Vision (ICCV), 2019.
+ > Petr Kellnhofer*, Adrià Recasens*, Simon Stent, Wojciech Matusik, and Antonio Torralba. “OpenGaze: Physically Unconstrained Gaze Estimation in the Wild”. IEEE International Conference on Computer Vision (ICCV), 2019.
 
 ```
 @inproceedings{opengaze_2019,
