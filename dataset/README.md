@@ -8,7 +8,7 @@ This is a dataset of 197588 frames from 238 subjects with 3D gaze annotations as
 
 ```
 @inproceedings{opengaze_2019,
-    author = {},
+    author = {Petr Kellnhofer and Adria Recasens and Simon Stent and Wojciech Matusik and and Antonio Torralba},
     title = {OpenGaze: Physically Unconstrained Gaze Estimation in the Wild},
     booktitle = {IEEE International Conference on Computer Vision (ICCV)},
     month = {October},
