@@ -1,15 +1,15 @@
-# OpenGaze: Physically Unconstrained Gaze Estimation in the Wild Dataset
+# Gaze360: Physically Unconstrained Gaze Estimation in the Wild Dataset
 
 ## About
 
 This is a dataset of 197588 frames from 238 subjects with 3D gaze annotations as captured in our Opengaze dataset. The dataset is for non-commercial research use only. By using this dataset you agree to terms of the [LICENSE](https://github.com/Erkil1452/opengaze/blob/master/LICENSE.md). If you use our dataset or code cite our [paper](x) as:
 
- > Petr Kellnhofer*, Adrià Recasens*, Simon Stent, Wojciech Matusik, and Antonio Torralba. “OpenGaze: Physically Unconstrained Gaze Estimation in the Wild”. IEEE International Conference on Computer Vision (ICCV), 2019.
+ > Petr Kellnhofer*, Adrià Recasens*, Simon Stent, Wojciech Matusik, and Antonio Torralba. “Gaze360: Physically Unconstrained Gaze Estimation in the Wild”. IEEE International Conference on Computer Vision (ICCV), 2019.
 
 ```
 @inproceedings{opengaze_2019,
     author = {Petr Kellnhofer and Adria Recasens and Simon Stent and Wojciech Matusik and and Antonio Torralba},
-    title = {OpenGaze: Physically Unconstrained Gaze Estimation in the Wild},
+    title = {Gaze360: Physically Unconstrained Gaze Estimation in the Wild},
     booktitle = {IEEE International Conference on Computer Vision (ICCV)},
     month = {October},
     year = {2019}
@@ -86,7 +86,7 @@ imEye = imHead[
 
 ### Splits ###
 
-We have used standard `train`/`val`/`test` splits of the OpenGaze dataset for training and evaluation of our model. The list of splits can be found in the `splits` entry and the assignment of particular frame in the `split`. 
+We have used standard `train`/`val`/`test` splits of the Gaze360 dataset for training and evaluation of our model. The list of splits can be found in the `splits` entry and the assignment of particular frame in the `split`. 
 
 Our model is temporal and uses symmetrical radius of 3 frames around the *central frame* (i.e., 7 frames in total) to produce prediction of gaze for the central frame. The split is always defined for the *central frame*. The first 3 and last 3 frames of each sequence cannot be used (due to missing boundary frames) and are marked as split `unused` = `3`. Note, that these frames are still being fed to the network but we do not evaluate their gaze (they are not ever the *central frame*).
 
