@@ -2,12 +2,12 @@
 
 ## About
 
-This is a dataset of 197588 frames from 238 subjects with 3D gaze annotations as captured in our Opengaze dataset. The dataset is for non-commercial research use only. By using this dataset you agree to terms of the [LICENSE](https://github.com/Erkil1452/opengaze/blob/master/LICENSE.md). If you use our dataset or code cite our [paper](x) as:
+This is a dataset of 197588 frames from 238 subjects with 3D gaze annotations as captured in our Gaze360 dataset. The dataset is for non-commercial research use only. By using this dataset you agree to terms of the [LICENSE](https://github.com/Erkil1452/gaze360/blob/master/LICENSE.md). If you use our dataset or code cite our [paper](x) as:
 
  > Petr Kellnhofer*, Adrià Recasens*, Simon Stent, Wojciech Matusik, and Antonio Torralba. “Gaze360: Physically Unconstrained Gaze Estimation in the Wild”. IEEE International Conference on Computer Vision (ICCV), 2019.
 
 ```
-@inproceedings{opengaze_2019,
+@inproceedings{gaze360_2019,
     author = {Petr Kellnhofer and Adria Recasens and Simon Stent and Wojciech Matusik and and Antonio Torralba},
     title = {Gaze360: Physically Unconstrained Gaze Estimation in the Wild},
     booktitle = {IEEE International Conference on Computer Vision (ICCV)},
@@ -16,7 +16,7 @@ This is a dataset of 197588 frames from 238 subjects with 3D gaze annotations as
 }
 ```
 
-You can obtain this dataset and more information at [http://opengaze.csail.mit.edu](http://opengaze.csail.mit.edu) .
+You can obtain this dataset and more information at [http://gaze360.csail.mit.edu](http://gaze360.csail.mit.edu) .
 
 ## Content
 
@@ -30,7 +30,7 @@ Additionally, we provide detections of eyes and faces from [dlib](http://dlib.ne
 
 The dataset consists of
 - This readme.
-- Our [license](https://github.com/Erkil1452/opengaze/blob/master/LICENSE.md)
+- Our [license](https://github.com/Erkil1452/gaze360/blob/master/LICENSE.md)
 - `metadata.mat` Matlab file with annotations
 - JPEG images with head and body crops (only head crops used in our paper)
 
