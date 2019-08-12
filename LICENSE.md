@@ -1,8 +1,8 @@
 ### Copyright (c) 2019 - Petr Kellnhofer, Adrià Recasens, Simon Stent, Wojciech Matusik, and Antonio Torralba.
 
-## LICENSE AGREEMENT FOR USE OF OPENGAZE DATABASE AND MODELS
+## LICENSE AGREEMENT FOR USE OF GAZE360 DATABASE AND MODELS
 
-By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this License Agreement for Use of OpenGaze Database and Models ("Research License"). To the extent this Research License may be interpreted as a contract, You are granted the rights mentioned below in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.
+By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this License Agreement for Use of Gaze360 Database and Models ("Research License"). To the extent this Research License may be interpreted as a contract, You are granted the rights mentioned below in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.
 
 ### Section 1 – Definitions
 
@@ -10,7 +10,7 @@ By exercising the Licensed Rights (defined below), You accept and agree to be bo
 
  b. __You__ means the individual or entity exercising the Licensed Rights under this Research License. Your has a corresponding meaning.
 
- c. __Licensed Material__ refers to the OpenGaze database, models, and any related source. These contain eye-tracking data captured using our acquisition setup and machine learning models to predict where individuals are looking.
+ c. __Licensed Material__ refers to the Gaze360 database, models, and any related source. These contain eye-tracking data captured using our acquisition setup and machine learning models to predict where individuals are looking.
 
 ### Section 2 – Scope
 
@@ -26,7 +26,7 @@ By exercising the Licensed Rights (defined below), You accept and agree to be bo
   * The Licensed Material will only be used for research purposes and will not be used nor included in commercial applications in any form (such as original files, encrypted files, files containing extracted features, models trained on dataset, other derivative works, etc). 
   * Any work made public, whatever the form, based directly or indirectly on any part of the Licensed Material must include the following reference: 
 
-  > Petr Kellnhofer, Adrià Recasens, Simon Stent, Wojciech Matusik, and Antonio Torralba. “OpenGaze: Physically Unconstrained Gaze Estimation in the Wild”. IEEE International Conference on Computer Vision (ICCV), 2019.
+  > Petr Kellnhofer, Adrià Recasens, Simon Stent, Wojciech Matusik, and Antonio Torralba. “Gaze360: Physically Unconstrained Gaze Estimation in the Wild”. IEEE International Conference on Computer Vision (ICCV), 2019.
 
 4. Licensor complies with the State of Massachusetts legislation in force. It is Your, and only yours, to comply with all the data protection laws that may affect You. 
 
