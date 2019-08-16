@@ -35,7 +35,7 @@ The code consists of
 - This readme.
 - The training/val/test splits to train the Gaze360 model, as described in the Data section.
 - The model and loss definition (model.py)
-- A script for training and evaluation of the Gaze360 model.
+- A script for training and evaluation of the Gaze360 model (run.py).
 - A data loader specific for the Gaze360 dataset (data_loader.py)
 
 ## Trained models
