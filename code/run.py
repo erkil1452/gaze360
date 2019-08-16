@@ -31,7 +31,7 @@ batch_size = 80
 best_error = 100 # init with a large value
 lr = 1e-4
 
-test = True
+test = False
 checkpoint_test = 'gaze360_model.pth.tar'
 network_name = 'Gaze360'
 
