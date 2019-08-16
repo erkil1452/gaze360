@@ -26,20 +26,19 @@ class GazeLSTM(nn.Module):
 
         self.lstm = nn.LSTM(self.img_feature_dim, self.img_feature_dim,bidirectional=True,num_layers=2,batch_first=True)
 
-        # The linear layer that maps from hidden state space to output space
-        self.hidden2tag = nn.Linear(2*self.img_feature_dim, 3)
-        self.sample_len = 3
+        # The linear layer that maps the LSTM with the 3 outputs
+        self.last_layer = nn.Linear(2*self.img_feature_dim, 3)
 
 
     def forward(self, input):
 
-        base_out = self.base_model(input.view((-1, self.sample_len) + input.size()[-2:]))
+        base_out = self.base_model(input.view((-1, 3) + input.size()[-2:]))
 
         base_out = base_out.view(input.size(0),7,self.img_feature_dim)
 
         lstm_out, _ = self.lstm(base_out)
         lstm_out = lstm_out[:,3,:]
-        output = self.hidden2tag(lstm_out).view(-1,3)
+        output = self.last_layer(lstm_out).view(-1,3)
 
 
         angular_output = output[:,:2]

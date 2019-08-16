@@ -19,9 +19,10 @@ import torchvision.utils as vutils
 from model import GazeLSTM,PinBallLoss
 
 source_path = "../imgs/"
-test_file = "validation.txt"
+val_file = "validation.txt"
 train_file = "train.txt"
 
+test_file = "test.txt"
 
 
 workers = 30;
@@ -30,7 +31,8 @@ batch_size = 80
 best_error = 100 # init with a large value
 lr = 1e-4
 
-
+test = True
+checkpoint_test = 'gaze360_model.pth.tar'
 network_name = 'Gaze360'
 
 from tensorboardX import SummaryWriter
@@ -64,7 +66,7 @@ def main():
         num_workers=workers, pin_memory=True)
 
     val_loader = torch.utils.data.DataLoader(
-        ImagerLoader(source_path,test_file,transforms.Compose([
+        ImagerLoader(source_path,val_file,transforms.Compose([
             transforms.Resize((224,224)),transforms.ToTensor(),image_normalize,
         ])),
         batch_size=batch_size, shuffle=True,
@@ -75,6 +77,20 @@ def main():
     criterion = PinBallLoss().cuda()
 
     optimizer = torch.optim.Adam(model.parameters(), lr)
+
+    if test==True:
+
+        test_loader = torch.utils.data.DataLoader(
+            ImagerLoader(source_path,test_file,transforms.Compose([
+                transforms.Resize((224,224)),transforms.ToTensor(),image_normalize,
+            ])),
+            batch_size=batch_size, shuffle=True,
+            num_workers=workers, pin_memory=True)
+        checkpoint = torch.load(checkpoint_test)
+        model.load_state_dict(checkpoint['state_dict'])
+        angular_error = validate(test_loader, model, criterion)
+        print('Angular Error is',angular_error)
+
 
     for epoch in range(0, epochs):
 
@@ -202,6 +218,9 @@ def validate(val_loader, model, criterion):
     foo.add_scalar("angular-test", angular.avg, count)
     foo.add_scalar("loss-test", losses.avg, count)
     return angular.avg
+
+
+
 
 def save_checkpoint(state, is_best, filename='checkpoint_'+network_name+'.pth.tar'):
     torch.save(state, filename)
