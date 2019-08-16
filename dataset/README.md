@@ -2,7 +2,7 @@
 
 ## About
 
-This is a dataset of 197588 frames from 238 subjects with 3D gaze annotations as captured in our Gaze360 dataset. The dataset is for non-commercial research use only. By using this dataset you agree to terms of the [LICENSE](https://github.com/Erkil1452/gaze360/blob/master/LICENSE.md). If you use our dataset or code cite our [paper](x) as:
+This is a dataset of 197588 frames from 238 subjects with 3D gaze annotations as captured in our Gaze360 dataset. The dataset is for non-commercial research use only. By using this dataset you agree to terms of the [LICENSE](https://github.com/Erkil1452/gaze360/blob/master/LICENSE.md). If you use our dataset or code cite our [paper](http://gaze360.csail.mit.edu/iccv2019_gaze360.pdf) as:
 
  > Petr Kellnhofer*, Adrià Recasens*, Simon Stent, Wojciech Matusik, and Antonio Torralba. “Gaze360: Physically Unconstrained Gaze Estimation in the Wild”. IEEE International Conference on Computer Vision (ICCV), 2019.
 
@@ -22,7 +22,7 @@ You can obtain this dataset and more information at [http://gaze360.csail.mit.ed
 
 The dataset contains body and head crops in original resolution as captured by our capturing setup based on Ladybug5 360 degree camera. The camera is equipped with 5+1 vertical sensors with `2048 x 2448` pixel resolution each. After rectification the images were stored as `3382 x 4096` pixel JPEG files. The provided crops are made from these original frames. As the camera sensor field of views overlap, same person may be captured by two cameras. Each such capture is treated as an independent sample (but all are counted as a single person in our 238 subject dataset).
 
-[AlphaPose](https://github.com/MVIG-SJTU/AlphaPose) algorithm was used for detection of subjects in our images. Refer to our [paper](xxx) for more details.
+[AlphaPose](https://github.com/MVIG-SJTU/AlphaPose) algorithm was used for detection of subjects in our images. Refer to our [paper](http://gaze360.csail.mit.edu/iccv2019_gaze360.pdf) for more details.
 
 Additionally, we provide detections of eyes and faces from [dlib](http://dlib.net/) library wherever such detection is possible. Frames where such detection failed (occlusion, rear view,..) are marked by `-1` in respective fields.
 
@@ -38,7 +38,7 @@ The dataset consists of
 
 The `metadata.mat` is a Matlab file which can be loaded using Matlab or using [scipy](https://www.scipy.org/) library for Python. Note that it uses **0-based indexing** (C-style) and not the 1-based indexing of Matlab. Therefore, if used in Matlab, +1 has to be added to every array access, e.g. `recName = recordings(recording(i) + 1);`. No such treatment is needed in Python which we use for our Pytorch model.
 
-All entries have as many items as there are frames in the dataset. The only exception is `recordings` which only defines list of independent recording session names and `splits` which defines our split names. Each recording corresponds to an acquisition session with a group of unique subjects. Refer to our [paper](x) for more details about the data collection procedure.
+All entries have as many items as there are frames in the dataset. The only exception is `recordings` which only defines list of independent recording session names and `splits` which defines our split names. Each recording corresponds to an acquisition session with a group of unique subjects. Refer to our [paper](http://gaze360.csail.mit.edu/iccv2019_gaze360.pdf) for more details about the data collection procedure.
 
 ### 3D Coordinates
 Two 3D coordinate systems are used. Refer to our [supplementary file](x) (most notably Figure 2) for more details. Briefly:
