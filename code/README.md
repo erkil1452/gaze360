@@ -33,9 +33,9 @@ The implementation has been tested wihth PyTorch 1.1.0 but it is likely to work 
 
 The code consists of
 - This readme.
-- The training splits, as described in the Data section.
+- The training/val/test splits to train the Gaze360 model, as described in the Data section.
 - The model and loss definition (model.py)
-- A training script (train.py)
+- A script for training and evaluation of the Gaze360 model.
 - A data loader specific for the Gaze360 dataset (data_loader.py)
 
 ## Trained models
