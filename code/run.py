@@ -247,7 +247,6 @@ def compute_angular_error(input,target):
     target = target.view(-1,1,3)
     output_dot = torch.bmm(target,input)
     output_dot = output_dot.view(-1)
-    output_dot = torch.clamp(output_dot,-0.999999,0.999999)
     output_dot = torch.acos(output_dot)
     output_dot = output_dot.data
     output_dot = 180*torch.mean(output_dot)/math.pi
