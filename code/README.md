@@ -42,5 +42,5 @@ The code consists of
 
 The model weights can be downloaded from this [link](http://gaze360.csail.mit.edu/files/gaze360_model.pth.tar)
 
-## Future releases
-We are planning to release soon code and instructions to use Gaze360 in arbitrary videos. 
+## Gaze360 in videos
+A beta version of the notebook describing how to run Gaze360 on Youtube videos is now [online](https://colab.research.google.com/drive/1AUvmhpHklM9BNt0Mn5DjSo3JRuqKkU4y)!
