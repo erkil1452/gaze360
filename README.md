@@ -21,5 +21,5 @@ You can obtain the Gaze360 dataset at [http://gaze360.csail.mit.edu](http://gaze
 
 
 ## Code
-You can find the code for the Gaze360 model in the [code](https://github.com/erkil1452/gaze360/tree/master/code) section of this repository. We are planning to release soon code and instructions to use Gaze360 in arbitrary videos. 
+You can find the code for the Gaze360 model in the [code](https://github.com/erkil1452/gaze360/tree/master/code) section of this repository. You can find code and instructions describing how to run Gaze360 in Youtube videos in this [Google Colab notebook](https://colab.research.google.com/drive/1AUvmhpHklM9BNt0Mn5DjSo3JRuqKkU4y) (beta version).
 
