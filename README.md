@@ -2,7 +2,7 @@
 
 ## About
 
-This is code and data for Gaze360. The usage of the dataset and the code is for non-commercial research use only. By using this code you agree to terms of the [LICENSE](https://github.com/Erkil1452/gaze360/blob/master/LICENSE.md). If you use our dataset or code cite our [paper](x) as:
+This is code and data for Gaze360. The usage of the dataset and the code is for non-commercial research use only. By using this code you agree to terms of the [LICENSE](https://github.com/Erkil1452/gaze360/blob/master/LICENSE.md). If you use our dataset or code cite our [paper](http://gaze360.csail.mit.edu/iccv2019_gaze360.pdf) as:
 
  > Petr Kellnhofer*, Adrià Recasens*, Simon Stent, Wojciech Matusik, and Antonio Torralba. “Gaze360: Physically Unconstrained Gaze Estimation in the Wild”. IEEE International Conference on Computer Vision (ICCV), 2019.
 

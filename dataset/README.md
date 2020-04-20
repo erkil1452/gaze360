@@ -41,14 +41,14 @@ The `metadata.mat` is a Matlab file which can be loaded using Matlab or using [s
 All entries have as many items as there are frames in the dataset. The only exception is `recordings` which only defines list of independent recording session names and `splits` which defines our split names. Each recording corresponds to an acquisition session with a group of unique subjects. Refer to our [paper](http://gaze360.csail.mit.edu/iccv2019_gaze360.pdf) for more details about the data collection procedure.
 
 ### 3D Coordinates
-Two 3D coordinate systems are used. Refer to our [supplementary file](x) (most notably Figure 2) for more details. Briefly:
+Two 3D coordinate systems are used. Refer to our [supplementary file](https://github.com/erkil1452/gaze360/blob/master/OpenGaze__ICCV_2019_Sup_.pdf) (most notably Figure 2) for more details. Briefly:
 - **Ladybug camera coordinate system** - right-handed coordinate system with z-axis pointing up and origin in the center of the Ladybug camera system. Units are meters. Used for object positions.
 - **Eye coordinate system** - right-handed coordinate system with y-axis pointing up and origin in the center of the Ladybug camera system. Units are meters. Origin and units are irelevant in practice as it is only used to express normalized gaze direction. The practical interpretation is that the positive x-axis points to the left, positive y-axis points up and positive z-axis points away from the camera, i.e. `[-1,0,0]` is a gaze looking to the right or `[0,0,-1]` straight into the camera from the camera's point of view, irrespective of subjects position in the world.
 
 ![3D Coordinate Systems](assets/coords.png)
 **3D Coordinate Systems**: (a) Estimting the subject's eye distance from camera using a ground plane assumption, and (b) the gaze transform between the subject's **Eye coordinate system** (`E`) and the **Ladybug camera coordinate system** (`L`). Positive `E_z` is pointing away.
 
-Please note that although the 3D gaze (`gaze_dir`) is defined as a difference between target's and subject's positions (`target_pos3d - person_eyes3d`) each of them is expressed in different coordinate system, i.e. `gaze_dir = M * (target_pos3d - person_eyes3d)` where `M` depends on a normal direction between eyes and the camera. Refer to our [supplementary file](x) for details.
+Please note that although the 3D gaze (`gaze_dir`) is defined as a difference between target's and subject's positions (`target_pos3d - person_eyes3d`) each of them is expressed in different coordinate system, i.e. `gaze_dir = M * (target_pos3d - person_eyes3d)` where `M` depends on a normal direction between eyes and the camera. Refer to our [supplementary file](https://github.com/erkil1452/gaze360/blob/master/OpenGaze__ICCV_2019_Sup_.pdf) for details.
 
 ### 2D Coordinates
 All 2D coordinates relate to a position inside the original rectified full frame with resolution of `3382 x 4096` pixels. Positions are stored as `[x, y]`. Bounding boxes are represented `[x,y,widht,height]`. All units are normalized, i.e. divided by the original frame resolution. Hence, `[0.0, 0.1, 0.1, 0.2]` is a `338 x 819` px box with offset of `[0, 410]` pixels.
