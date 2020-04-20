@@ -64,8 +64,8 @@ When working with these image crops, one must reproject the 2D coordinates in th
 headBBInFull = person_head_bbox[i,:]
 eyeBBInFull = person_eye_left_bbox[i,:]
 eyeBBInCrop = [
-    eyeBBInFull[0] - headBBInFull[0], # subtract offset of the crop
-    eyeBBInFull[1] - headBBInFull[1], 
+    (eyeBBInFull[0] - headBBInFull[0]) / headBBInFull[2], # subtract offset of the crop
+    (eyeBBInFull[1] - headBBInFull[1]) / headBBInFull[3], 
     eyeBBInFull[2] / headBBInFull[2], # scale to smaller space of the crop
     eyeBBInFull[3] / headBBInFull[3], 
     ]
