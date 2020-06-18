@@ -1,6 +1,6 @@
 # Gaze360: Physically Unconstrained Gaze Estimation in the Wild Dataset
 
-## [https://colab.research.google.com/drive/1AUvmhpHklM9BNt0Mn5DjSo3JRuqKkU4y](Online demo code!)
+## Online demo code: https://colab.research.google.com/drive/1AUvmhpHklM9BNt0Mn5DjSo3JRuqKkU4y
 
 ## About
 
